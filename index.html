@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/js/bootstrap.js">
+
+
+    <title>Eventos</title>
+</head>
+
+<body>
+    <nav id="menu" class="navbar navbar-expand-lg dark">
+        <div class="container-fluid ">
+            <a class="navbar-brand logoCuervo" href="#"><img src="./images/logonegro-modified.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link botonesMenu" id="botonUno" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link botonesMenu" id="botonDos" href="#">Features</a>
+                    </li>
+
+                    <a id="mode" class="btn btn-outline-secondary" href="#">Modo Cuervo</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="text-secondary mt-5 ml-5 pl-5" id="titulo">Alimento Balanceado</h1>
+        <div id="cardDinamica" class="wrapper shadow-lg p-3 mb-5 bg-body rounded mt-5 col-md-6 col-sm-6" style="width: 90%;">
+        </div>
+    </div>
+    <div>
+        <h2 class="h1">Tu carrito:</h2>
+        <table class="table table-dark table-striped-columns ">
+            <thead>
+                <tr>
+                    <th class="carritoS">ID</th>
+                    <th class="carritoS">Nombre</th>
+                    <th class="carritoS">Cantidad</th>
+                    <th class="carritoS">Precio</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+                <!--productos agregados al carro-->
+
+            </tbody>
+        </table>
+        <div id="botonEliminar"></div>
+    </div>
+    <footer id="newsletter">
+
+        <div class="container mb-3 pb-3 pt-3" style="width: 100;">
+            <form>
+                <label for="inputPassword6" class="col-form-label">Desea suscribirse al Newsletter?</label>
+                <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="elcuervo@petshop.com" onkeypress="capturarP(event)">
+                <input type="submit" class="btn-check" id="btn-check-2-outlined form" checked autocomplete="off">
+                <label class="btn btn-outline-secondary" id="formulario" for="btn-check-2-outlined" value="enviar">Enviar</label><br>
+            </form>
+    </footer>
+
+
+    <script src="productos.js" defer></script>
+    <script src="codigo.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+body {
+    font-family: 'Source Serif 4', serif;
+}
+
+.logoCuervo img {
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.nav-item a {
+    color: #E8D637;
+}
+
+#menu {
+    height: 70px;
+}
+
+
+/*CSS para pagina tienda*/
+
+.imgArray {
+    width: 150px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.dark {
+    background-color: black;
+    color: black;
+}
+
+.blue {
+    background-color: red;
+    color: black;
+}
