@@ -127,7 +127,7 @@ productoA.forEach(array => {
 })
 
 
-//funcion agregar al carrito
+//Tabla simula carrito
 function agregarAlCarrito(productoNuevo) {
     const findCarrito = carritoDeCompras.find(e => e.id === productoNuevo.id)
     if (!findCarrito) {
@@ -151,7 +151,7 @@ function tablaDelCarrito(productoNuevo) {
                     <td> ${ productoNuevo.nombre } </td>
                     <td> ${ productoNuevo.cantidad } </td> 
                     <td> ${ productoNuevo.precio * productoNuevo.cantidad } </td>
-                    <td><button id = "btnEliminar${productoNuevo.id}"> eliminar </button></td>
+                    <td><button id = "btnEliminar${productoNuevo.id}" class="btn btn-warning rounded-pill text-secondary"> Eliminar producto  </button></td>
                     </tr>
                 `;
     });
@@ -168,7 +168,7 @@ function tablaDelCarrito(productoNuevo) {
 
     const borrarCarrito = document.createElement("div");
     cuerpoTabla.appendChild(borrarCarrito);
-    borrarCarrito.innerHTML = `<button id="btnBorrarCarrito">borrar carrito</button>`
+    borrarCarrito.innerHTML = `<button id="btnBorrarCarrito" class="btn btn-warning rounded-pill text-secondary">Borrar carrito</button>`
 
     const btnBorrarCarrito = document.getElementById("btnBorrarCarrito")
     btnBorrarCarrito.addEventListener("click", borrar);
