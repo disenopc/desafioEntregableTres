@@ -58,6 +58,8 @@ const createNewSuscriptor = (email) => {
     const id = listasuscriptores.generateId();
     const newSubs = new Suscriptor(email, id);
     listasuscriptores.addSuscriptor(newSubs);
+
+
 };
 class Suscriptores {
     constructor() {
@@ -72,6 +74,8 @@ class Suscriptores {
 };
 
 const listasuscriptores = new Suscriptores();
+
+
 
 
 //Tecla enter
@@ -136,7 +140,7 @@ function agregarAlCarrito(productoNuevo) {
         const index = carritoDeCompras.indexOf(findCarrito)
         carritoDeCompras[index].cantidad++
     }
-    console.log(carritoDeCompras);
+    console.log(...carritoDeCompras);
     alert("Producto: " + productoNuevo.nombre + " agregado al carrito.");
     localStorage.setItem("carrito", JSON.stringify(carrito));
     tablaDelCarrito()
@@ -198,4 +202,6 @@ tablaDelCarrito();
 
 const [a, b, c, d, e, f, g] = productoA
 
-console.log(a, b, c, d, e, f, g)
+console.log(a, b, c, d, e, f, g);
+
+//Spread del mismo
