@@ -191,3 +191,11 @@ const eliminar = (productoNuevo) => {
 }
 
 tablaDelCarrito();
+
+
+//Desestructuracion de arrays
+//Alimento balanceado para adultos
+
+const [a, b, c, d, e, f, g] = productoA
+
+console.log(a, b, c, d, e, f, g)
