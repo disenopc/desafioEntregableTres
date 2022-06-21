@@ -203,5 +203,3 @@ tablaDelCarrito();
 const [a, b, c, d, e, f, g] = productoA
 
 console.log(a, b, c, d, e, f, g);
-
-//Spread del mismo
