@@ -76,8 +76,8 @@ const listasuscriptores = new Suscriptores();
 
 //Tecla enter
 function capturarP(e) {
-    ((e.which == 13) || (e.keycode == 13)) ? alert("Escriba un email y luego presione el boton enviar")
-};
+    ((e.which == 13) || (e.keycode == 13)) ? alert("Escriba un email y luego presione el boton enviar"): ""
+}
 
 
 //Modo cuervo
@@ -108,7 +108,7 @@ function dark() {
 boton.onclick = () => {
     {
         (modo == "dark") ? blue(): dark();
-        console.log("El boton anda")
+        console.log("El boton funciona");
     }
 
     localStorage.setItem("modo", modo);
@@ -174,9 +174,7 @@ function tablaDelCarrito(productoNuevo) {
     btnBorrarCarrito.addEventListener("click", borrar);
 
     localStorage.setItem("carrito", JSON.stringify(carritoDeCompras));
-    const { nombre, cantidad, precio } = carritoDeCompras;
-    let productosAgregadosAlCarro = [nombre, cantidad, precio];
-    console.log(productosAgregadosAlCarro);
+
 
 }
 const borrar = () => {
